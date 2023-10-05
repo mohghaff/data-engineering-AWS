@@ -6,10 +6,10 @@ table = dynamodb.Table('Employees')
 
 # Create item with Name: Mark Wilbur and Email: markwilbur@dataengineer.cloud
 
-response = table.<provide method here>(
+response = table.put_item(
 Item = { 
-     'Name': <provide name here>,
-     'Email': <provide email here>,
+     'Name': 'Mark Wilbur',
+     'Email': 'markwilbur@dataengineer.cloud',
 	 'Department': 'IT'
        }
 )
